@@ -1,0 +1,14 @@
+<h2>Input:</h2>
+<p>{{ data }}</p>
+
+{% if "Phishing" in result %}
+    <h1 style="color:red;">{{ result }}</h1>
+{% else %}
+    <h1 style="color:green;">{{ result }}</h1>
+{% endif %}
+
+<h3>Confidence: {{ confidence }}%</h3>
+
+<h3>{{ action }}</h3>
+
+<a href="/">Go Back</a>

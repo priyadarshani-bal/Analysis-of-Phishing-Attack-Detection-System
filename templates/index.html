@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Attack Detection System</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#0f172a;
+            color:white;
+            margin:0;
+        }
+
+        .navbar{
+            background:#1e293b;
+            padding:15px;
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .navbar h2{
+            margin:0;
+            color:#38bdf8;
+        }
+
+        .nav-links a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            margin-top:30px;
+        }
+
+        .title{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .title h1{
+            color:#38bdf8;
+        }
+
+        .cards{
+            display:flex;
+            gap:30px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:25px;
+            width:400px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .card h2{
+            color:#38bdf8;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+            margin-bottom:15px;
+        }
+
+        button{
+            background:#38bdf8;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        button:hover{
+            background:#0284c7;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:50px;
+            padding:20px;
+            background:#1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>🛡 Phishing Detection</h2>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/history">History</a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="title">
+        <h1>Phishing Attack Detection System</h1>
+        <p>Detect malicious URLs and phishing emails using Machine Learning</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>🌐 URL Detection</h2>
+
+            <form action="/url" method="POST">
+                <input type="text"
+                       name="url"
+                       placeholder="Enter URL"
+                       required>
+
+                <button type="submit">
+                    Check URL
+                </button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>📧 Email Detection</h2>
+
+            <form action="/email" method="POST">
+
+                <textarea
+                    name="email"
+                    rows="6"
+                    placeholder="Paste Email Content">
+                </textarea>
+
+                <button type="submit">
+                    Check Email
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Phishing Attack Detection System | Flask + Machine Learning
+</footer>
+
+</body>
+</html>
